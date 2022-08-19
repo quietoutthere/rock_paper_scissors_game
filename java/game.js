@@ -1,11 +1,14 @@
-const clickRock = document.getElementById("rock")
-const clickPaper = document.getElementById("paper")
-const clickScissors = document.getElementById("scissors")
-
-clickRock.addEventListener("click", addMessage)
-
-function addMessage() {
-    alert("hellyea")
+let game = {
+    clickRock: document.getElementById("rock"),
+    clickPaper: document.getElementById("paper"),
+    clickScissors: document.getElementById("scissors")
 }
 
-console.log("hellyea")
+game.clickRock.addEventListener("click", addMessage) 
+
+
+
+function addMessage() {
+    
+}
+
