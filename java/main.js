@@ -17,11 +17,10 @@ const choseScissors = scissors.addEventListener("click", versusScissors)
 console.log(choice[x])
 console.log()
 
-let scoreKeep = `(User) ${tally(rockResult(), paperResult(), scissoresResult())}  - (Computer)`; 
+returnScore.textContent = `(User) ${tally(rockResult(), paperResult(), scissorsResult())}  - (Computer)`; 
       
 
 function versusRock() {
-    returnScore.textContent = scoreKeep;
     returnComputer.textContent = `The Computer Chose: ${choice[y]}`; 
     returnWinner.textContent = rockResult();
         function rockResult() {
@@ -36,7 +35,6 @@ function versusRock() {
 }
 
 function versusPaper() {
-    returnScore.textContent = scoreKeep;
     returnComputer.textContent = `The Computer Chose: ${choice[y]}`; 
     returnWinner.textContent = paperResult()
         function paperResult() {
@@ -51,7 +49,6 @@ function versusPaper() {
 }
 
 function versusScissors() {
-    returnScore.textContent = scoreKeep;
     returnComputer.textContent = `The Computer Chose: ${choice[y]}`; 
     returnWinner.textContent = scissorsResult()
         function scissorsResult() {
@@ -67,10 +64,10 @@ function versusScissors() {
 
 function tally(a,b,c) {
     if (a === "you win") {
-        return x;
+        return x++;
     } else if (b === "you win") {
-        return x;
+        return x++;
     } else if (c === "you win") {
-        return x;
+        return x++;
     }
 }
