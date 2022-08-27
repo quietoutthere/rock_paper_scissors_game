@@ -1,42 +1,44 @@
-const click = document.getElementById("icons")
-const rock = document.getElementById("rock")
-const paper = document.getElementById("paper")
-const scissors = document.getElementById("scissors")
+
+let click = document.getElementById("icons")
+let rock = document.getElementById("rock")
+let paper = document.getElementById("paper")
+let scoreKeep = document.getElementById("score")
+let scissors = document.getElementById("scissors")
 let returnScore = document.getElementById("score")
 let returnComputer = document.getElementById("computerChoice")
 let returnWinner = document.getElementById("winner")
-let y = Math.floor(Math.random()*3)
 let choice = ["Rock", "Paper", "Scissors"]
-
-//let computerScore = 0 
-//let userScore = 0
-
-console.log(refresh())
+let computerScore = 0; 
+let userScore = 0;
 
 const choseRock = rock.addEventListener("click", versusRock)
 const chosePaper = paper.addEventListener("click", versusPaper)
 const choseScissors = scissors.addEventListener("click", versusScissors)
 
-const computerChoice = click.addEventListener("click", refresh)
-
-function refresh() {
-    return choice[y]
-
-}
-
 function versusRock() {
+    y = Math.floor(Math.random()*3);
     returnComputer.textContent = `The Computer Chose: ${choice[y]}`; 
     returnWinner.textContent = rockResult();
+    tally(rockResult());
+    scoreKeep.textContent = `User: ${userScore} - ${computerScore} : Computer`
 }
 
 function versusPaper() {
+    y = Math.floor(Math.random()*3);
     returnComputer.textContent = `The Computer Chose: ${choice[y]}`; 
-    returnWinner.textContent = paperResult()
+    returnWinner.textContent = paperResult();
+    tally(paperResult());
+    scoreKeep.textContent = `User: ${userScore} - ${computerScore} : Computer`
+    
 }
 
 function versusScissors() {
+    y = Math.floor(Math.random()*3)
     returnComputer.textContent = `The Computer Chose: ${choice[y]}`; 
-    returnWinner.textContent = scissorsResult()
+    returnWinner.textContent = scissorsResult();
+    tally(scissorsResult());
+    scoreKeep.textContent = `User: ${userScore} - ${computerScore} : Computer`
+    
 }
 
 function scissorsResult() {
@@ -69,11 +71,11 @@ function paperResult() {
     }
 }
 
-function tally(a,b,c) {
-    if (a==="You win" | b=== "You win" | c==="You win") {
-        return userScore++;
-    } else if (a==="You lose" | b==="You lose" | c=== "You lose") {
-        return computerScore++;
-    }
+function tally(a) {
+    if (a==="You win") {
+        userScore++;
+    } 
+    if (a==="You lose") {
+        computerScore++;
+    }  
 }
-
