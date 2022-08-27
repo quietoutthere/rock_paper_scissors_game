@@ -9,4 +9,5 @@ https://quietoutthere.github.io/rock_paper_scissors_game/
 
 This was my 2nd javascript project. It's an interactive game, you vs the computer. May the luckiest win.
 
-Author: Evan Oyster - Full Stack Developer LinkedIn
+Author: Evan Oyster - Full Stack Developer 
+LinkedIn: https://www.linkedin.com/feed/
