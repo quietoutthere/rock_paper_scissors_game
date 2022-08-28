@@ -1,13 +1,11 @@
 Rock, Paper, Scissors Game!
 
-Play it here 
+Play it [here](https://quietoutthere.github.io/rock_paper_scissors_game/)
 
-https://quietoutthere.github.io/rock_paper_scissors_game/
+![Screenshot 2022-08-28 094208](https://user-images.githubusercontent.com/108839805/187076869-ae34086c-b037-40ff-8f9b-9fc7c9bc217b.png)
 
-![RPS](https://user-images.githubusercontent.com/108839805/187047799-40e58e53-509c-4a53-b54f-047591cbcb5a.png)
-
-
-This was my 2nd javascript project. It's an interactive game, you vs the computer. May the luckiest win.
+This was my 2nd javascript project. Concpets that I had to learn and implement for this project were, 'switch cases' and 'ternary operators'. I utitilzed these to clean up and shorten my code.
 
 Author: Evan Oyster - Full Stack Developer 
-LinkedIn: https://www.linkedin.com/feed/
+
+[LinkedIn](https://www.linkedin.com/feed/)
